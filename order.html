@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Krishna Cake Shop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Krishna Cake Shop</div>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="about.html">About Us</a>
+                
+                </li>
+                <li><a href="order.html">Order Now</a>
+                </li>
+            </li>
+            <li><a href="cake.html">our cakes</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order">
+        <h1>Order Your Cake</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <label for="cake-type">Cake Type:</label>
+            <select id="cake-type" name="cake-type">
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="red velvet">Red Velvet</option>
+                <option value="pista">choco cube pastry</option>
+                <option value="Divine Caramel">Divine Caramel</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Divine Caramel">pineapple cube pastry</option> 
+                <option value="Divine Caramel">blueberry cheese pastry</option>
+                <option value="Divine Caramel">Rum ball cubes</option>
+            </select>
+
+            <label for="Address">Address:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <div class="payment-container">
+                <h1>select payment method</h1>
+                <form action="submit_payment.php" method="POST">
+                    <div class="payment-method">
+                        <input type="radio" id="cod" name="payment" value="cod" checked>
+                        <label for="cod">Cash on Delivery(COD)</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="Credit-card" name="payment" value="Credit-card"> 
+                        <label for="Credit-card">Credit card</label>
+                    </div>
+
+                    <div class="payment-method">
+                        <input type="radio" id="paypal" name="payment" value="paypal" checked>
+                        <label for="paypal">paypal</label>
+                    </div>
+                    <br><br>
+
+                    <button type="submit">Proceed</button>
+
+                </form>
+            </div>
+            <br><br>
+
+         <button type="submit" class="btn">Submit Order</button>
+
+        </form>
+    </section>
+   
+
+    <footer>
+        <p>Krishna Cake Shop</p>
+    </footer>
+</body>
+</html>
